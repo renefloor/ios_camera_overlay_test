@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1" verticalCompressionResistancePriority="1" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m7n-RN-gHh">
+                                <rect key="frame" x="0.0" y="44" width="414" height="498"/>
+                                <state key="normal" title="Open camera"/>
+                                <connections>
+                                    <action selector="openCamera:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lmh-Cd-J4C"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KRd-d3-P7P">
+                                <rect key="frame" x="0.0" y="562" width="414" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="bD7-lG-6wY"/>
+                                </constraints>
+                                <state key="normal" title="test tap"/>
+                                <connections>
+                                    <action selector="logTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3L3-vu-wYo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KRd-d3-P7P" firstAttribute="top" secondItem="m7n-RN-gHh" secondAttribute="bottom" constant="20" id="4dQ-EQ-dZK"/>
+                            <constraint firstItem="m7n-RN-gHh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="NRa-2J-5uc"/>
+                            <constraint firstItem="KRd-d3-P7P" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="WgU-kH-T8d"/>
+                            <constraint firstItem="m7n-RN-gHh" firstAttribute="trailing" secondItem="KRd-d3-P7P" secondAttribute="trailing" id="dxy-9l-NKu"/>
+                            <constraint firstItem="m7n-RN-gHh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jnx-Y3-4yB"/>
+                            <constraint firstItem="m7n-RN-gHh" firstAttribute="leading" secondItem="KRd-d3-P7P" secondAttribute="leading" id="qyJ-Cm-xyq"/>
+                            <constraint firstItem="m7n-RN-gHh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uJ8-vx-7sh"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.21582733812951" y="116.08040201005025"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
