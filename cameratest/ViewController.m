@@ -54,6 +54,10 @@ UIImagePickerControllerCameraDevice _device;
     [self checkCameraAuthorization];
 }
 
+- (void)touchesBegan:(NSSet*)touches withEvent:(UIEvent*)event {
+    printf("touched");
+}
+
 - (IBAction)logTap:(id)sender {
     printf("Button tapped\n");
 }
